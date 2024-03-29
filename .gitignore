@@ -164,3 +164,7 @@ node_modules/
 # Serverless directories
 .serverless/
 /data/
+
+
+# test video files
+video
