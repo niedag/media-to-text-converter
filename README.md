@@ -11,3 +11,6 @@ OR
 - AFTER putting text through a filter, add it to a csv file and label it as either TRUE (Safe) or FALSE (Not safe)
 - Take ~100 or sample texts that are pre-labeled as Safe or Unsafe and then compare it against the current model.
 - Report the validation test as simply Num correct / total text
+
+**Additional Tests**
+- Check the validity of mp4 to mp3 AND mp3 to text
