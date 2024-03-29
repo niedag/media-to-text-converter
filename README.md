@@ -1,6 +1,6 @@
 speech2text
 
-Todo:
+**Todo:**
 - Take video media (mp4) convert to mp3
 - Run mp3 through GPT text inference
 - Take context from GPT response and insert it into a txt or csv file
