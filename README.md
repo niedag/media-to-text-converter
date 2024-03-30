@@ -8,6 +8,7 @@ The mp4 to mp3 converter is currently separate to the mp3 to text interface
 5. Navigate to the url /transcribe
 6. Add the audio clip of your choosing and select Submit Audio File
 7. Text will be added to a csv file at /validate/validate.csv
+
 **Todo:**
 - Take video media (mp4) convert to mp3 X
 - New audio clips are created in the audio folder without overwritting current files in the directory X
