@@ -36,8 +36,9 @@ def transcribe_audio(request):
     else:
         # For GET requests, render an HTML form for file upload
         return render(request, 'transcribe_form.html')
-    
-def save_transcription_to_csv(transcription):
+
+# Also Creates a new CSV file if it doesn't exist - for quick recreation of csv
+def save_transcription_to_csv(transcription): 
     # Define directory and file paths
     directory = "validate"
     if not os.path.exists(directory):
@@ -50,7 +51,7 @@ def save_transcription_to_csv(transcription):
     # Check if the file exists
     file_exists = os.path.isfile(csv_file_path)
 
-    # Write transcription to CSV
+    # Write transcription to CSV 
     with open(csv_file_path, mode='a', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         

@@ -5,8 +5,6 @@ from pprint import pprint as pp # Pretty print module
  
 #print(glob.glob("video/*.mp4"))
 output_dir = "audio"
-os.makedirs(output_dir, exist_ok=True)
-
 
 for file in glob.glob("video/*.mp4"):
     #print(file)
@@ -15,8 +13,10 @@ for file in glob.glob("video/*.mp4"):
     
     #audioclip.write_audiofile(file[:-3]+"mp3")
     filename = os.path.basename(file)
+    # Changing the output directory to /audio
     output_file = os.path.join(output_dir, os.path.splitext(filename)[0] + ".mp3")
     audioclip.write_audiofile(output_file)
+
 # print(dir(videoclip))
 #pp(dir(videoclip))
 # pp(dir(videoclip.audio))
