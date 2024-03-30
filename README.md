@@ -1,5 +1,7 @@
 speech2text
 
+This is a forked copy of Mckmitch's speech2text project. 
+
 The mp4 to mp3 converter is currently separate to the mp3 to text interface
 1. First open up a venv and install all the required libraries
 2. Add all mp4 files into the audio folder.
