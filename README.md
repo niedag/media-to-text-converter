@@ -3,8 +3,8 @@ speech2text
 **Todo:**
 - Take video media (mp4) convert to mp3 X
 - New audio clips are created in the audio folder without overwritting current files in the directory X
-- Run mp3 through GPT text inference
-- Take context from GPT response and insert it into a txt or csv file
+- Run mp3 through GPT text inference X
+- Take context from GPT response and insert it into a txt or csv file X
 OR 
 - Take the context from GPT output and run it through a NSFW filter
 
