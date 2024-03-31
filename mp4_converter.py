@@ -17,6 +17,6 @@ for file in glob.glob("video/*.mp4"):
     output_file = os.path.join(output_dir, os.path.splitext(filename)[0] + ".mp3")
     audioclip.write_audiofile(output_file)
 
-# print(dir(videoclip))
+#print(dir(videoclip))
 #pp(dir(videoclip))
 # pp(dir(videoclip.audio))
