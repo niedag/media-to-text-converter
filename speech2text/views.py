@@ -38,15 +38,3 @@ def transcribe_audio(request):
         # For GET requests, render an HTML form for file upload
         return render(request, 'transcribe_form.html')
 
-def mp4Tomp3_convert(request):
-    
-    FILETOCONVERT = AudioFileClip(mp4)
-    FILETOCONVERT.write_audiofile(mp3)
-    FILETOCONVERT.close()
-
-VIDEO_FILE_PATH = "/Full/File/Path/ToSong.mp4"
-AUDIO_FILE_PATH = "/Full/File/Path/ToSong.mp3"
-
-MP4ToMP3(VIDEO_FILE_PATH, AUDIO_FILE_PATH)
-# MoviePy - Writing audio in /Full/File/Path/ToSong.mp3
-# MoviePy - Done.    
